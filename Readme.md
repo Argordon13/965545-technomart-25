@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Андрей Романюк](https://up.htmlacademy.ru/htmlcss/25/user/965545).
-* Наставник: [Анастасия Константинович] (https://htmlacademy.ru/profile/id153552).
+* Наставник: [Анастасия Константинович](https://htmlacademy.ru/profile/id153552).
 
 ---
 
