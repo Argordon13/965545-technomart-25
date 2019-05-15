@@ -13,7 +13,7 @@
 
         <!--Логотип и поиск-->
         <div class="logo-and-search">
-          <h2 class="logo">Техномарт</h2>  <!--Потом заменить на изображение!!!-->
+          <img src="img/logo-header.png" alt="Техномарт">
           <img src="icon-search" alt="Значок поиска">
           <span class="search-field">Поиск:</span>
         </div>
@@ -80,7 +80,57 @@
       
       <!--Предложения-->
       <section class="offers">
+        <div class="offer materials">
+          <h3>Материалы</h3>
+          <a class="offers-button" href="#">На любой вкус</a>
+        </div>
+        <div class="offer tools">
+          <h3>Инструмент</h3>
+          <a class="offers-button" href="#">На все случаи</a>
+        </div>
+        <div class="offer techs">
+          <h3>Техника</h3>
+          <a class="offers-button" href="#">Для стройки</a>
+        </div>
+        <div class="offer sale">
+          <h3>Скидки 50%</h3>
+          <a class="offers-button" href="#">На 350 товаров</a>
+        </div>
+        <div class="offer delivery">
+          <h3>Доставка</h3>
+          <a class="offers-button" href="#">Бесплатно</a>
+        </div>
 
+        <!--Слайдер-->
+        <div class="slider">
+          <!--Слайдер 1-->
+          <div class="slider-1">
+            <h3>Перфораторы</h3>
+            <p>Настоящие мужские игрушки</p>
+            <img src="slider1" alt="Перфораторы">
+          </div>
+          <!--Слайдер 2-->
+          <div class="slider-2">
+            <h3>Дрели</h3>
+            <p>Соседям на радость!</p>
+            <img src="slider2" alt="Дрели">
+          </div>
+          <!--Стрелка назад-->
+          <a class="button-back">
+            <img src="icon-back" alt="Назад">
+          </a>
+          <!--Стрелка вперёд-->
+          <a class="button-next">
+            <img src="icon-next" alt="Вперёд">
+          </a>
+          <!--Открыть каталог-->
+          <a class="button" href="catalog.html">Открыть каталог</a>
+          <!--Переключатели-->
+          <ul class="dots">
+            <li><a><img src="dot-fill"></a></li>
+            <li><a><img src="dot"></a></li>
+          </ul>
+        </div>
       </section>
 
       <!--Популярные товары-->
@@ -168,7 +218,96 @@
         </ul>
       </section>
 
-      <!--Часть, которая сверстается позже-->
+      <!--Производители-->
+      <section class="popular-fabricators">
+        <!--Заголовок секции и ссылка на всех производителей-->
+        <div class="section-title">
+          <h2>Популярные товары:</h2>
+          <div class="all-popular-fabricators">
+            <a class="button" href="#">Все производители</a>
+          </div>
+        </div>
+
+        <!--Список производителей и их логотипы-->
+        <ul class="popular-fabricators-list">
+          <li class="popular-fabricators-item">
+            <img src="logo-bosch" alt="BOSCH">
+          </li>
+          <li class="popular-fabricators-item">
+              <img src="logo-makita" alt="Makita">
+          </li>
+          <li class="popular-fabricators-item">
+              <img src="logo-dewalt" alt="DeWALT">
+          </li>
+          <li class="popular-fabricators-item">
+              <img src="logo-intersckol" alt="Интерскол">
+          </li>
+          <li class="popular-fabricators-item">
+              <img src="logo-hitachi" alt="HITACHI" >
+          </li>
+          <li class="popular-fabricators-item">
+              <img src="logo-lg" alt="LG">
+          </li>
+          <li class="popular-fabricators-item">
+              <img src="logo-aeg" alt="AEG">
+          </li>
+          <li class="popular-fabricators-item">
+              <img src="logo-metabo" alt="Metabo">
+          </li>
+        </ul>
+
+      </section>
+
+      <!--Сервисы-->
+      <section class="services">
+        <h2>Сервисы</h2>
+        <p>
+          Хороший интернет-магазин отличается от плохого не только ценами!<br>
+          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+        </p>
+        <!--Список сервисов-->
+        <ul class="services-list">
+          <li class="services-item">Доставка</li>
+          <li class="services-item">Гарантия</li>
+          <li class="services-item">Кредит</li>
+        </ul>
+
+        <!--Доставка-->
+        <div class="services-delivery">
+          <h3>Доставка</h3>
+          <p>
+            Мы с удовольствием доставим ваш товар прямо <br>
+            к вашему подъезду совершенно бесплатно! <br>
+            Ведь мы неплохо заработаем, <br>
+            поднимая его на ваш этаж!
+          </p>
+          <img src="icon-delivery" alt="Доставка">
+        </div>
+
+        <!--Гарантия-->
+        <div class="services-guarantee">
+            <h3>Гарантия</h3>
+            <p>
+              Если купленный у нас товар поломается или заискрит, <br>
+              а также в случае пожара, спровоцированного его возгаранием, <br>
+              вы всегда можете быть уверены в нашей гарантии. Мы обменяем <br>
+              сгоревший товар на новый.<br>
+              Дом уж восстановите как-нибудь сами.
+            </p>
+            <img src="icon-guarantee" alt="Гарантия">
+          </div>
+
+          <!--Кредит-->
+          <div class="services-credit">
+              <h3>Кредит</h3>
+              <p>
+                Залезть в долговую яму стало проще! <br>
+                Кредитные консультанты придут вам на помощь.
+              </p>
+              <a href="#" class="button">Отправить заявку</a>
+              <img src="icon-credit" alt="Кредит">
+            </div>
+      </section>
 
       <!--О компании-->
       <section class="about-company">
@@ -205,7 +344,7 @@
     <!--Подвал-->
     <footer class="main-footer">
       <div class="footer-navigation">
-        <h2>Техномарт</h2>
+        <img src="img/logo-footer.png" alt="Техномарт">
         <!--Главная навигация подвала-->
         <nav class="main-footer-navigation">
           <ul class="main-navigation-list">
