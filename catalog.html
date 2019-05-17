@@ -17,7 +17,10 @@
           <!--Валидатор ругается на то, что в шапке нет заголовка, поэтому я сделаю заголовок, но в дальнейшем думаю его сделать невидимым-->
           <h2 class="invisible">Техномарт</h2>
           <img src="icon-search" alt="Значок поиска">
-          <span class="search-field">Поиск:</span>
+          <form class="search">
+            <label for="field-search">Поиск:</label>
+            <input type="search" id="field-search" name="search">
+          </form>
         </div>
 
         <!--Меню пользователя-->
@@ -91,7 +94,48 @@
 
         <!--Фильтр-->
         <section class="filter">
-            <h2>Фильтр</h2>
+            <h2>Фильтр:</h2>
+            <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
+                <fieldset>
+                    <legend>Производители:</legend>
+                    <ul>
+                        <li class="filter-option">
+                            <input type="checkbox" id="bosch" name="bosch" checked>
+                            <label for="bosch">BOSCH</label>
+                        </li>
+                        <li class="filter-option">
+                            <input type="checkbox" id="intersckol" name="intersckol">
+                            <label for="intersckol">Интерскол</label>
+                        </li>
+                        <li class="filter-option">
+                            <input type="checkbox" id="makita" name="makita" checked>
+                            <label for="makita">Makita</label>
+                        </li>
+                        <li class="filter-option">
+                            <input type="checkbox" id="dewalt" name="dewalt">
+                            <label for="dewalt">DeWalt</label>
+                        </li>
+                        <li class="filter-option">
+                            <input type="checkbox" id="hitachi" name="hitachi">
+                            <label for="hitachi">Hitachi</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Питание:</legend>
+                    <ul>
+                        <li class="filter-option">
+                            <input type="radio" id="battery" name="battery">
+                            <label for="battery">Аккумуляторные</label>
+                        </li>
+                        <li class="filter-option">
+                            <input type="radio" id="power" name="power">
+                            <label for="power">Сетевые</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <button class="filter-button">Показать</button>
+            </form>
         </section>
 
         <!--Каталог-->
@@ -275,8 +319,8 @@
             </ul>
             <!--Пагинация-->
             <ul class="pagination-list">
-                <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
-                <li class="pagination-item"><a>2</a></li>
+                <li class="pagination-item pagination-item-current"><a>1</a></li>
+                <li class="pagination-item"><a href="#">2</a></li>
                 <li class="pagination-item"><a href="#">3</a></li>
                 <li class="pagination-item"><a href="#">Следующая</a></li>
             </ul>
@@ -348,5 +392,15 @@
             </p>
         </div>
     </footer>
+
+    <!--Добавление в корзину товара-->
+    <section class="add-cart">
+        <p>Товар добавлен в корзину!</p>
+        <div>
+            <a class="button" href="#">Оформить заказ</a>
+            <button class="continue-shoping">Продолжить покупки</button>
+        </div>
+        <button class="button-close">Закрыть</button>
+    </section>
   </body>
 </html>

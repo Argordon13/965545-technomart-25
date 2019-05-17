@@ -17,7 +17,10 @@
           <!--Валидатор ругается на то, что в шапке нет заголовка, поэтому я сделаю заголовок, но в дальнейшем думаю его сделать невидимым-->
           <h2 class="invisible">Техномарт</h2>
           <img src="icon-search" alt="Значок поиска">
-          <span class="search-field">Поиск:</span>
+          <form class="search">
+            <label for="field-search">Поиск:</label>
+            <input type="search" id="field-search" name="search">
+          </form>
         </div>
 
         <!--Меню пользователя-->
@@ -83,23 +86,23 @@
       <!--Предложения-->
       <section class="offers">
         <div class="offer materials">
-          <h3>Материалы</h3>
+          <div class="offers-title">Материалы</div >
           <a class="offers-button" href="#">На любой вкус</a>
         </div>
         <div class="offer tools">
-          <h3>Инструмент</h3>
+          <div  class="offers-title">Инструмент</div >
           <a class="offers-button" href="#">На все случаи</a>
         </div>
         <div class="offer techs">
-          <h3>Техника</h3>
+          <div class="offers-title">Техника</div>
           <a class="offers-button" href="#">Для стройки</a>
         </div>
         <div class="offer sale">
-          <h3>Скидки 50%</h3>
+          <div class="offers-title">Скидки 50%</div>
           <a class="offers-button" href="#">На 350 товаров</a>
         </div>
         <div class="offer delivery">
-          <h3>Доставка</h3>
+          <div class="offers-title">Доставка</div>
           <a class="offers-button" href="#">Бесплатно</a>
         </div>
 
@@ -118,13 +121,13 @@
             <img src="slider2" alt="Дрели">
           </div>
           <!--Стрелка назад-->
-          <a class="button-back">
-            <img src="icon-back" alt="Назад">
-          </a>
+          <button class="button-back">
+            <img src="icon-back" alt="Назад"> Назад
+          </button>
           <!--Стрелка вперёд-->
-          <a class="button-next">
-            <img src="icon-next" alt="Вперёд">
-          </a>
+          <button class="button-next">
+            <img src="icon-next" alt="Вперёд"> Вперёд
+          </button>
           <!--Открыть каталог-->
           <a class="button" href="catalog.html">Открыть каталог</a>
           <!--Переключатели-->
@@ -140,9 +143,7 @@
         <!--Заголовок секции и ссылка на все товары-->
         <div class="section-title">
           <h2>Популярные товары:</h2>
-          <div class="all-popular-items">
-            <a class="button" href="#">Все популярные товары</a>
-          </div>
+          <a class="button" href="#">Все популярные товары</a>
         </div>
         
         <ul class="popular-items-list">
@@ -150,8 +151,10 @@
           <li class="popular-item">
               <h3>
                 <a href="#">
-                  <span class="popular-brand">Перфоратор BOSCH</span>
-                  <span class="popular-model">BFG 9000</span>
+                  <p class="popular-item-title">
+                    Перфоратор BOSCH<br>
+                    BFG 9000
+                  </p>
                 </a>
               </h3>
               <div class="popular-item-image">
@@ -168,8 +171,10 @@
           <li class="popular-item">
               <h3>
                 <a href="#">
-                  <span class="popular-brand">Перфоратор BOSCH</span>
-                  <span class="popular-model">BFG 3000</span>
+                  <p class="popular-item-title">
+                    Перфоратор BOSCH<br>
+                    BFG 3000
+                  </p>
                 </a>
               </h3>
               <div class="popular-item-image">
@@ -186,8 +191,10 @@
           <li class="popular-item">
               <h3>
                 <a href="#">
-                  <span class="popular-brand">Перфоратор BOSCH</span>
-                  <span class="popular-model">BFG 6000</span>
+                  <p class="popular-item-title">
+                    Перфоратор BOSCH<br>
+                    BFG 6000
+                  </p>
                 </a>
               </h3>
               <div class="popular-item-image">
@@ -204,8 +211,10 @@
           <li class="popular-item">
               <h3>
                 <a href="#">
-                  <span class="popular-brand">Перфоратор BOSCH</span>
-                  <span class="popular-model">BFG 2000</span>
+                  <p class="popular-item-title">
+                    Перфоратор BOSCH<br>
+                    BFG 2000
+                  </p>
                 </a>
               </h3>
               <div class="popular-item-image">
@@ -224,10 +233,8 @@
       <section class="popular-fabricators">
         <!--Заголовок секции и ссылка на всех производителей-->
         <div class="section-title">
-          <h2>Популярные товары:</h2>
-          <div class="all-popular-fabricators">
-            <a class="button" href="#">Все производители</a>
-          </div>
+          <h2>Производители:</h2>
+          <a class="button" href="#">Все производители</a>
         </div>
 
         <!--Список производителей и их логотипы-->
@@ -398,5 +405,31 @@
         </p>
       </div>
     </footer>
+
+    <!--Форма обратной связи-->
+    <section class="popup-feedback">
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
+        <p>
+          <label class="label-form" for="username">Ваше имя:</label><br>
+          <input id="username" class="user-name" name="name" type="text" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label class="label-form" for="user-email">Ваш e-mail:</label><br>
+          <input id="user-email" class="email" name="e-mail" type="text" placeholder="email@example.com">
+        </p>
+        <p>
+          <label class="label-form" for="user-message">Текст письма:</label><br>
+          <textarea class="message" placeholder="В свободной форме" id="user-message" name="message"></textarea>
+        </p>
+        <button class="feedback-button-submit">Отправить</button>
+        <button class="button-close">Закрыть</button>
+      </form>
+    </section>
+
+    <!--Карта-->
+    <section class="popup-map">
+      <img src="img/popup-map.png" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="940" height="446">
+      <button class="button-close">Закрыть</button>
+    </section>
   </body>
 </html>
