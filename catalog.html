@@ -95,7 +95,7 @@
         <!--Фильтр-->
         <section class="filter">
             <h2>Фильтр:</h2>
-            <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
+            <form class="filter-form" method="POST" action="https://echo.htmlacademy.ru">
                 <fieldset>
                     <legend>Производители:</legend>
                     <ul>
@@ -125,8 +125,8 @@
                     <legend>Питание:</legend>
                     <ul>
                         <li class="filter-option">
-                            <input type="radio" id="battery" name="battery">
-                            <label for="battery">Аккумуляторные</label>
+                            <input type="radio" id="power" name="power">
+                            <label for="power">Аккумуляторные</label>
                         </li>
                         <li class="filter-option">
                             <input type="radio" id="power" name="power">
@@ -396,9 +396,9 @@
 
     <!--Добавление в корзину товара-->
     <section class="add-cart">
-        <h2 class="invisible">Товар в корзине</h2> <!--Будет невидимым-->
-        <p>Товар добавлен в корзину!</p>
-        <div>
+        <h2 class="invisible">Товар в корзине</h2> <!--Будет невидим-->
+        <p class="add-cart-message">Товар добавлен в корзину!</p>
+        <div class="button-cart-area">
             <a class="button" href="#">Оформить заказ</a>
             <button class="continue-shoping">Продолжить покупки</button>
         </div>

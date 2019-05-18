@@ -402,18 +402,18 @@
     <section class="popup-feedback">
       <h2 class="invisible">Обратная связь</h2> <!--Будет невидим-->
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
-        <p>
-          <label class="label-form" for="username">Ваше имя:</label><br>
+        <div class="form-element">
+          <label class="label-form" for="username">Ваше имя:</label>
           <input id="username" class="user-name" name="name" type="text" placeholder="Имя Фамилия">
-        </p>
-        <p>
-          <label class="label-form" for="user-email">Ваш e-mail:</label><br>
+        </div>
+        <div class="form-element">
+          <label class="label-form" for="user-email">Ваш e-mail:</label>
           <input id="user-email" class="email" name="e-mail" type="text" placeholder="email@example.com">
-        </p>
-        <p>
-          <label class="label-form" for="user-message">Текст письма:</label><br>
+        </div>
+        <div class="form-element">
+          <label class="label-form" for="user-message">Текст письма:</label>
           <textarea class="message" placeholder="В свободной форме" id="user-message" name="message"></textarea>
-        </p>
+        </div>
         <button class="feedback-button-submit">Отправить</button>
         <button class="button-close">Закрыть</button>
       </form>
