@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    font-family: 'Cuprum', sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-header
+.top-container {
+    background-color: #293449;
+    color: #ffffff;
+}
+
+/*Поведение логотипа*/
+.logo-background {
+    background-color: #ee3643;
+    box-shadow: inset 0 -5px 0 0 #b52933;
+    width: 220px;
+    height: 47px;
+}
+.logo-background img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 13px;
+    padding-bottom: 11px;
+}
+.logo-background:hover {
+    background-color: #ca2c37;
+}
+.logo-background:active {
+    background-color: #ba2732;
+}
+
+.icon .fill {
+    width: 17px;
+    height: 17px;
+    fill: #6a7180;
+}
+
+.user-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+.user-menu a {
+    color: #ffffff;
+}
+
+
+/*Кнопка "Закладки"*/
+.user-menu 
+.user-menu-item:hover:not(.order) {
+    background-color: #212a3a;
+}
+.user-menu 
+.user-menu-item:hover svg .fill{
+    fill: #ffffff;
+}
+.user-menu 
+.user-menu-item:active:not(.order) {
+    background-color: #161d29;
+    opacity: 0.5;
+}
+
+/*Кнопка "Оформить заказ"*/
+.user-menu .order {
+    background-color: #63a63e;
+}
+.user-menu .order:hover {
+    background-color: #5fbb2d;
+}
+.user-menu .order:active {
+    background-color: #518534;
+    opacity: 0.5;
+}
+
+
+.main-title {
+    font-size: 16px;
+    font-style: italic;
+    color: #ee3643;
+}
+
+/*Невидимость заголовков*/
+.invisible {
+    display: none;
+}
