@@ -44,7 +44,7 @@
             <li class="user-menu-item">
                 <svg class="icon" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 width="14px" height="16px" viewBox="0 0 14 16" enable-background="new 0 0 14 16" xml:space="preserve">
-                    <path class="fill" fill="#E72C2D" d="M14,15c0,0.55-0.368,0.741-0.818,0.426l-5.363-3.765c-0.45-0.315-1.187-0.315-1.637,0l-5.364,3.765
+                    <path d="M14,15c0,0.55-0.368,0.741-0.818,0.426l-5.363-3.765c-0.45-0.315-1.187-0.315-1.637,0l-5.364,3.765
                     C0.368,15.741,0,15.55,0,15V1c0-0.55,0.45-1,1-1h12c0.55,0,1,0.45,1,1V15z"/>
                   </svg>
               <a href="#">Закладки: 0</a>
@@ -52,7 +52,7 @@
             <li class="user-menu-item item-in-cart">
                 <svg class="icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
-                  <g class="fill">
+                  <g>
                       <circle cx="4.5" cy="13.5" r="1.5"/>
                       <circle cx="12.5" cy="13.5" r="1.5"/>
                       <polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	"/>
@@ -93,21 +93,25 @@
 
         <!--Личный кабинет-->
         <div class="user">
+            <div class="icon-and-user">
                 <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                width="20px" height="18px" viewBox="0 0 20 18" enable-background="new 0 0 20 18" xml:space="preserve">
-                    <path class="fill-user" fill="#c5c5c5" d="M17.881,14.166c-2.144-0.735-4.256-1.666-5.207-2.39c-0.657-0.501-0.77-1.618-0.517-2.415
+                 width="20px" height="18px" viewBox="0 0 20 18" enable-background="new 0 0 20 18" xml:space="preserve">
+                    <path  d="M17.881,14.166c-2.144-0.735-4.256-1.666-5.207-2.39c-0.657-0.501-0.77-1.618-0.517-2.415
                     c1.118-0.903,1.864-2.477,1.864-4.278C14.021,2.276,12.221,0,10,0S5.979,2.276,5.979,5.083c0,1.801,0.746,3.374,1.863,4.277
                     c0.253,0.798,0.141,1.915-0.517,2.416c-0.95,0.724-3.063,1.654-5.207,2.39S0,18,0,18h20C20,18,20.025,14.901,17.881,14.166z"/>
                 </svg>
                 <span>Равшан Джамшутович</span>
-            <svg X version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	        width="21px" height="17px" viewBox="0 0 21 17" enable-background="new 0 0 21 17" xml:space="preserve">
-                <g>
-	                <polygon class="fill-user" fill="#c5c5c5" points="21,8.5 12.125,0 12.125,6 6.125,6 6.125,11 12.125,11 12.125,17 	"/>
-	                <path class="fill-user" fill="#c5c5c5" d="M3.106,13.952V3.048c0.018-0.376,0.171-1.057,1.01-1.057h5.027V0H4.116C1.938,0,1.112,1.81,1.087,3.027
-		            v10.946C1.112,15.189,1.938,17,4.116,17h5.027v-1.99H4.116C3.277,15.01,3.124,14.327,3.106,13.952z"/>
-                </g>
-            </svg>
+            </div>
+            <div class="icon-logout">
+                <svg X version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	            width="21px" height="17px" viewBox="0 0 21 17" enable-background="new 0 0 21 17" xml:space="preserve">
+                    <g>
+	                    <polygon  points="21,8.5 12.125,0 12.125,6 6.125,6 6.125,11 12.125,11 12.125,17 	"/>
+	                    <path  d="M3.106,13.952V3.048c0.018-0.376,0.171-1.057,1.01-1.057h5.027V0H4.116C1.938,0,1.112,1.81,1.087,3.027
+		                v10.946C1.112,15.189,1.938,17,4.116,17h5.027v-1.99H4.116C3.277,15.01,3.124,14.327,3.106,13.952z"/>
+                    </g>
+                </svg>
+            </div>
             <ul class="personal-area">
                 <li><a href="#">Мои заказы</a></li>
                 <li><a href="#">Личный кабинет</a></li>
@@ -221,17 +225,11 @@
                         </a>
                     </div>
                     <div class="catalog-item-price">
-                        <p class="text-delete">22500 Р.</p>
+                        <p class="text-price"><del>22500 Р.</del></p>
                         <a class="price-button">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141 38" width="141" height="38">
-                                    <defs>
-                                        <image width="141" height="38" id="img1" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNS4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTQxcHgiIGhlaWdodD0iMzhweCIgdmlld0JveD0iMCAwIDE0MSAzOCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTQxIDM4IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNFRTM2NDMiIGQ9Ik0xMjEuNjMyLDBoLTNoLTAuMzA3SDNDMS4zNSwwLDAsMS4zNSwwLDN2MzJjMCwxLjY1LDEuMzUsMywzLDNoMTE4LjYzMkwxNDEsMTlMMTIxLjYzMiwweiIvPg0KPC9zdmc+DQo="/>
-                                    </defs>
-                                    <style>
-                                        tspan { white-space:pre }
-                                    </style>
-                                    <use id="btn copy 14" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
-                                </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="141" height="38" viewBox="0 0 141 38">
+                                <path fill="#EE3643" d="M121.632 0H3C1.35 0 0 1.35 0 3v32c0 1.65 1.35 3 3 3h118.632L141 19 121.632 0z"/>
+                            </svg>
                             15500 Р.
                         </a>
                     </div>
@@ -251,17 +249,11 @@
                         </a>
                     </div>
                     <div class="catalog-item-price">
-                        <p class="text-delete">30500 Р.</p>
+                        <p class="text-price"><del>30500 Р.</del></p>
                         <a class="price-button">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141 38" width="141" height="38">
-                                    <defs>
-                                        <image width="141" height="38" id="img1" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNS4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTQxcHgiIGhlaWdodD0iMzhweCIgdmlld0JveD0iMCAwIDE0MSAzOCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTQxIDM4IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNFRTM2NDMiIGQ9Ik0xMjEuNjMyLDBoLTNoLTAuMzA3SDNDMS4zNSwwLDAsMS4zNSwwLDN2MzJjMCwxLjY1LDEuMzUsMywzLDNoMTE4LjYzMkwxNDEsMTlMMTIxLjYzMiwweiIvPg0KPC9zdmc+DQo="/>
-                                    </defs>
-                                    <style>
-                                        tspan { white-space:pre }
-                                    </style>
-                                    <use id="btn copy 14" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
-                                </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="141" height="38" viewBox="0 0 141 38">
+                                <path fill="#EE3643" d="M121.632 0H3C1.35 0 0 1.35 0 3v32c0 1.65 1.35 3 3 3h118.632L141 19 121.632 0z"/>
+                            </svg>
                             25500 Р.
                         </a>
                     </div>
@@ -300,15 +292,9 @@
                     </ul>
                     <div class="catalog-item-price">
                         <a class="price-button">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141 38" width="141" height="38">
-                                    <defs>
-                                        <image width="141" height="38" id="img1" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNS4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTQxcHgiIGhlaWdodD0iMzhweCIgdmlld0JveD0iMCAwIDE0MSAzOCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTQxIDM4IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNFRTM2NDMiIGQ9Ik0xMjEuNjMyLDBoLTNoLTAuMzA3SDNDMS4zNSwwLDAsMS4zNSwwLDN2MzJjMCwxLjY1LDEuMzUsMywzLDNoMTE4LjYzMkwxNDEsMTlMMTIxLjYzMiwweiIvPg0KPC9zdmc+DQo="/>
-                                    </defs>
-                                    <style>
-                                        tspan { white-space:pre }
-                                    </style>
-                                    <use id="btn copy 14" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
-                                </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="141" height="38" viewBox="0 0 141 38">
+                                <path fill="#EE3643" d="M121.632 0H3C1.35 0 0 1.35 0 3v32c0 1.65 1.35 3 3 3h118.632L141 19 121.632 0z"/>
+                            </svg>
                             12500 Р.
                         </a>
                     </div>
@@ -328,17 +314,11 @@
                         </a>
                     </div>
                     <div class="catalog-item-price">
-                        <p class="text-delete">22500 Р.</p>
+                        <p class="text-price"><del>22500 Р.</del></p>
                         <a class="price-button">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141 38" width="141" height="38">
-                                    <defs>
-                                        <image width="141" height="38" id="img1" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNS4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTQxcHgiIGhlaWdodD0iMzhweCIgdmlld0JveD0iMCAwIDE0MSAzOCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTQxIDM4IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNFRTM2NDMiIGQ9Ik0xMjEuNjMyLDBoLTNoLTAuMzA3SDNDMS4zNSwwLDAsMS4zNSwwLDN2MzJjMCwxLjY1LDEuMzUsMywzLDNoMTE4LjYzMkwxNDEsMTlMMTIxLjYzMiwweiIvPg0KPC9zdmc+DQo="/>
-                                    </defs>
-                                    <style>
-                                        tspan { white-space:pre }
-                                    </style>
-                                    <use id="btn copy 14" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
-                                </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="141" height="38" viewBox="0 0 141 38">
+                                <path fill="#EE3643" d="M121.632 0H3C1.35 0 0 1.35 0 3v32c0 1.65 1.35 3 3 3h118.632L141 19 121.632 0z"/>
+                            </svg>
                             15500 Р.
                         </a>
                     </div>
@@ -358,17 +338,11 @@
                         </a>
                     </div>
                     <div class="catalog-item-price">
-                        <p class="text-delete">30500 Р.</p>
+                        <p class="text-price"><del>30500 Р.</del></p>
                         <a class="price-button">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141 38" width="141" height="38">
-                                    <defs>
-                                        <image width="141" height="38" id="img1" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNS4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTQxcHgiIGhlaWdodD0iMzhweCIgdmlld0JveD0iMCAwIDE0MSAzOCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTQxIDM4IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNFRTM2NDMiIGQ9Ik0xMjEuNjMyLDBoLTNoLTAuMzA3SDNDMS4zNSwwLDAsMS4zNSwwLDN2MzJjMCwxLjY1LDEuMzUsMywzLDNoMTE4LjYzMkwxNDEsMTlMMTIxLjYzMiwweiIvPg0KPC9zdmc+DQo="/>
-                                    </defs>
-                                    <style>
-                                        tspan { white-space:pre }
-                                    </style>
-                                    <use id="btn copy 14" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
-                                </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="141" height="38" viewBox="0 0 141 38">
+                                <path fill="#EE3643" d="M121.632 0H3C1.35 0 0 1.35 0 3v32c0 1.65 1.35 3 3 3h118.632L141 19 121.632 0z"/>
+                            </svg>
                             25500 Р.
                         </a>
                     </div>
@@ -389,15 +363,9 @@
                     </div>
                     <div class="catalog-item-price">
                         <a class="price-button">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141 38" width="141" height="38">
-                                    <defs>
-                                        <image width="141" height="38" id="img1" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNS4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTQxcHgiIGhlaWdodD0iMzhweCIgdmlld0JveD0iMCAwIDE0MSAzOCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTQxIDM4IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNFRTM2NDMiIGQ9Ik0xMjEuNjMyLDBoLTNoLTAuMzA3SDNDMS4zNSwwLDAsMS4zNSwwLDN2MzJjMCwxLjY1LDEuMzUsMywzLDNoMTE4LjYzMkwxNDEsMTlMMTIxLjYzMiwweiIvPg0KPC9zdmc+DQo="/>
-                                    </defs>
-                                    <style>
-                                        tspan { white-space:pre }
-                                    </style>
-                                    <use id="btn copy 14" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
-                                </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="141" height="38" viewBox="0 0 141 38">
+                                <path fill="#EE3643" d="M121.632 0H3C1.35 0 0 1.35 0 3v32c0 1.65 1.35 3 3 3h118.632L141 19 121.632 0z"/>
+                            </svg>
                             12500 Р.
                         </a>
                     </div>
@@ -417,17 +385,11 @@
                         </a>
                     </div>
                     <div class="catalog-item-price">
-                        <p class="text-delete">22500 Р.</p>
+                        <p class="text-price"><del>22500 Р.</del></p>
                         <a class="price-button">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141 38" width="141" height="38">
-                                    <defs>
-                                        <image width="141" height="38" id="img1" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNS4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTQxcHgiIGhlaWdodD0iMzhweCIgdmlld0JveD0iMCAwIDE0MSAzOCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTQxIDM4IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNFRTM2NDMiIGQ9Ik0xMjEuNjMyLDBoLTNoLTAuMzA3SDNDMS4zNSwwLDAsMS4zNSwwLDN2MzJjMCwxLjY1LDEuMzUsMywzLDNoMTE4LjYzMkwxNDEsMTlMMTIxLjYzMiwweiIvPg0KPC9zdmc+DQo="/>
-                                    </defs>
-                                    <style>
-                                        tspan { white-space:pre }
-                                    </style>
-                                    <use id="btn copy 14" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
-                                </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="141" height="38" viewBox="0 0 141 38">
+                                <path fill="#EE3643" d="M121.632 0H3C1.35 0 0 1.35 0 3v32c0 1.65 1.35 3 3 3h118.632L141 19 121.632 0z"/>
+                              </svg>
                             15500 Р.
                         </a>
                     </div>
@@ -447,17 +409,11 @@
                         </a>
                     </div>
                     <div class="catalog-item-price">
-                        <p class="text-delete">30500 Р.</p>
+                        <p class="text-price"><del>30500 Р.</del></p>
                         <a class="price-button">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141 38" width="141" height="38">
-                                    <defs>
-                                        <image width="141" height="38" id="img1" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNS4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTQxcHgiIGhlaWdodD0iMzhweCIgdmlld0JveD0iMCAwIDE0MSAzOCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTQxIDM4IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNFRTM2NDMiIGQ9Ik0xMjEuNjMyLDBoLTNoLTAuMzA3SDNDMS4zNSwwLDAsMS4zNSwwLDN2MzJjMCwxLjY1LDEuMzUsMywzLDNoMTE4LjYzMkwxNDEsMTlMMTIxLjYzMiwweiIvPg0KPC9zdmc+DQo="/>
-                                    </defs>
-                                    <style>
-                                        tspan { white-space:pre }
-                                    </style>
-                                    <use id="btn copy 14" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
-                                </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="141" height="38" viewBox="0 0 141 38">
+                                <path fill="#EE3643" d="M121.632 0H3C1.35 0 0 1.35 0 3v32c0 1.65 1.35 3 3 3h118.632L141 19 121.632 0z"/>
+                            </svg>
                             25500 Р.
                         </a>
                     </div>
@@ -478,15 +434,9 @@
                     </div>
                     <div class="catalog-item-price">
                         <a class="price-button">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141 38" width="141" height="38">
-                                    <defs>
-                                        <image width="141" height="38" id="img1" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNS4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTQxcHgiIGhlaWdodD0iMzhweCIgdmlld0JveD0iMCAwIDE0MSAzOCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTQxIDM4IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNFRTM2NDMiIGQ9Ik0xMjEuNjMyLDBoLTNoLTAuMzA3SDNDMS4zNSwwLDAsMS4zNSwwLDN2MzJjMCwxLjY1LDEuMzUsMywzLDNoMTE4LjYzMkwxNDEsMTlMMTIxLjYzMiwweiIvPg0KPC9zdmc+DQo="/>
-                                    </defs>
-                                    <style>
-                                        tspan { white-space:pre }
-                                    </style>
-                                    <use id="btn copy 14" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
-                                </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="141" height="38" viewBox="0 0 141 38">
+                                <path fill="#EE3643" d="M121.632 0H3C1.35 0 0 1.35 0 3v32c0 1.65 1.35 3 3 3h118.632L141 19 121.632 0z"/>
+                              </svg>
                             12500 Р.
                         </a>
                     </div>
