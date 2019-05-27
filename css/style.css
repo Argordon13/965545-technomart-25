@@ -130,14 +130,18 @@ a {
 .main-title {
     font-size: 16px;
     font-style: italic;
-    color: #ee3643;
-    width: 200px;
     font-weight: normal;
+    line-height: 23px;
+    color: #ee3643;
+    max-width: 190px;
+    margin: 0;
+    padding-left: 50px;
 }
 
 .middle-container .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: flex-start;
     margin-top: 46px;
     margin-bottom: 40px;
 }
@@ -145,23 +149,30 @@ a {
 .address-and-phone {
     display: flex;
     flex-direction: column;
-    align-items: center
+    align-items: center;
 }
 
 /*Блок с номером телефона*/
 .address-and-phone .phone {
-    width: 270px;
-    height: 39px;
+    width: 267px;
+    padding-top: 9px;
+    padding-bottom: 9px;
     border: 3px solid #ffffff;
     text-align: center;
     display: flex;
     justify-content: flex-start;
-    align-items: stretch;
+    align-items: center;
 }
+
+.phone svg {
+    padding-left: 15px;
+}
+
 /*Цвет номера телефона*/
 .address-and-phone .number {
     color: #e9292a;
     font-size: 21px;
+    margin-left: 40px;
 }
 /*Цвет и размер шрифта адреса*/
 .address-and-phone .address {
@@ -176,17 +187,19 @@ a {
     padding: 0;
     font-size: 21px;  
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    align-items: flex-start;
 }
-/*Элементы списка*/
-.user-navigation 
+/*Элементы списка*/ 
 .user-navigation-item {
-    
     background-color: #ffffff;
     color: #000000; 
     text-align: center;
-    padding-top:12px;
-    padding-bottom: 12px; 
+    padding: 12px 25px;
+    margin-right: 10px;
+}
+.user-navigation-item:last-child {
+    margin-right: 0;
 }
 /*Цвет ссылок*/
 .user-navigation 
@@ -264,14 +277,35 @@ a {
     font-size: 30px;
     text-transform: uppercase;
 }
+
+.about-company .container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+}
+
+.about-company .container .company {
+    padding-right: 120px;
+    flex-basis: 700px;
+}
 /*Размер текста рассказывающий о компании*/
 .text-13px {
     font-size: 13px;
     line-height: 24px;
 }
+.delivery-list {
+    line-height: 32px;
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
+    list-style: none;
+    
+}
 /*Размер шрифта элементов списка*/
 .delivery-item {
     font-size: 18px;
+    background: url(../img/list-style.png) no-repeat left center;
+    padding-left: 40px;
 }
 
 
@@ -370,6 +404,10 @@ a {
 .button {
     background-color: #ed3543;
     color: #ffffff;
+    text-align: center;
+    width: 220px;
+    padding: 12px 40px;
+    border-radius: 2px;
 }
 .button:hover {
     background-color: #ca2b36;
