@@ -275,23 +275,29 @@ a {
 /*Правило для заголовков 2-ого уровня*/
 .title {
     font-size: 30px;
+    font-weight: normal;
     text-transform: uppercase;
 }
 
 .about-company .container {
     display: flex;
     justify-content: space-between;
+    margin-top: 80px;
     margin-bottom: 90px;
 }
 
 .about-company .container .company {
     padding-right: 120px;
-    flex-basis: 700px;
+    flex-basis: 680px;
 }
+
 /*Размер текста рассказывающий о компании*/
 .text-13px {
     font-size: 13px;
     line-height: 24px;
+}
+.no-margin {
+    margin-bottom: 0;
 }
 .delivery-list {
     line-height: 32px;
@@ -307,11 +313,30 @@ a {
     background: url(../img/list-style.png) no-repeat left center;
     padding-left: 40px;
 }
+.img-map {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
 
 
 /*Подвал*/
 .main-footer {
     background-color: #31415b;
+}
+
+.footer-navigation .container{
+    display: flex;
+    justify-content: space-between;
+}
+.logo-and-address {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.navigation {
+    display: flex;
+    flex-direction: column;
 }
 /*Правило для списка навигации подвала*/
 .main-footer-navigation ul {
@@ -319,6 +344,9 @@ a {
     margin: 0;
     padding: 0;
     font-size: 18px;
+    display: flex;
+    flex-basis: 570px;
+    justify-content: space-between;
 }
 /*Цвет ссылок*/
 .main-footer-navigation a {
@@ -346,6 +374,9 @@ a {
     margin: 0;
     padding: 0;
     font-size: 18px;
+    display: flex;
+    flex-basis: 550px;
+    justify-content: space-between;
 }
 /*Цвет ссылок*/
 .other-footer-navigation a {
