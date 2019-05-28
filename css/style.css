@@ -277,35 +277,52 @@ a {
     font-size: 30px;
     font-weight: normal;
     text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.about-company {
+    display: flex;
 }
 
 .about-company .container {
+    margin-top: 82px;
     display: flex;
     justify-content: space-between;
-    margin-top: 80px;
-    margin-bottom: 90px;
+    align-items: stretch;
+    margin-bottom: 86px;
 }
 
 .about-company .container .company {
     padding-right: 120px;
     flex-basis: 680px;
 }
+.company .button {
+    width: 220px;
+    
+}
+.about-company .container .contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 /*Размер текста рассказывающий о компании*/
 .text-13px {
     font-size: 13px;
     line-height: 24px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px;
 }
-.no-margin {
-    margin-bottom: 0;
-}
+
 .delivery-list {
     line-height: 32px;
     margin: 0;
-    margin-bottom: 40px;
     padding: 0;
     list-style: none;
-    
+    margin-bottom: 40px;
 }
 /*Размер шрифта элементов списка*/
 .delivery-item {
@@ -313,21 +330,23 @@ a {
     background: url(../img/list-style.png) no-repeat left center;
     padding-left: 40px;
 }
+
 .img-map {
-    margin-top: 10px;
     margin-bottom: 40px;
 }
-
 
 
 /*Подвал*/
 .main-footer {
     background-color: #31415b;
+    
 }
 
 .footer-navigation .container{
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 55px;
 }
 .logo-and-address {
     display: flex;
@@ -337,6 +356,10 @@ a {
 .navigation {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: self-end;
+    margin-top: 40px;
+    
 }
 /*Правило для списка навигации подвала*/
 .main-footer-navigation ul {
@@ -347,6 +370,16 @@ a {
     display: flex;
     flex-basis: 570px;
     justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.main-navigation-list li {
+    padding-right: 60px;
+    flex-grow: 1;
+    
+}
+.main-navigation-list li:last-child {
+    padding-right: 0;
 }
 /*Цвет ссылок*/
 .main-footer-navigation a {
@@ -375,9 +408,18 @@ a {
     padding: 0;
     font-size: 18px;
     display: flex;
-    flex-basis: 550px;
-    justify-content: space-between;
+    flex-basis: 570px;
+    justify-content: flex-end;
 }
+
+.other-navigation-list li {
+    padding-right: 60px;
+    flex-grow: 1;
+}
+.other-navigation-list li:last-child {
+    padding-right: 0;
+}
+
 /*Цвет ссылок*/
 .other-footer-navigation a {
     color: #ffd180;
@@ -396,6 +438,13 @@ a {
 .footer-information {
     background-color: #293449;
 }
+.footer-information .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
 /*Весь белый текст в подвале*/
 .footer-text{
     color: #ffffff;
@@ -405,6 +454,8 @@ a {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+
 }
 /*Элементы списка социальных сетей*/
 .footer-social li {
@@ -412,6 +463,13 @@ a {
     width: 41px;
     height: 41px;
     border-radius: 20px;
+    margin-right: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-social li:last-child {
+    margin-right: 0;
 }
 /*Элементы списка социальных сетей*/
 .footer-social li:hover {
@@ -436,7 +494,6 @@ a {
     background-color: #ed3543;
     color: #ffffff;
     text-align: center;
-    width: 220px;
     padding: 12px 40px;
     border-radius: 2px;
 }
@@ -470,13 +527,19 @@ a {
     background-color: #ed3543;
 }
 /*Блок личного кабинета*/
-.inner-page .user {
+.inner-page .user-area {
     width: 299px;
     height: 45px;
     color: #000000;
     background-color: #ffffff;
     font-size: 21px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
 }
+
 .user svg {
     fill: #c5c5c5;
 }
@@ -506,10 +569,12 @@ a {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: space-around;
 }
 /*Позиционирование элементов списка*/
 .inner-page .personal-area li {
-    display: inline;
+    
 }
 /*Цвет ссылки элемента*/
 .inner-page .personal-area a{
