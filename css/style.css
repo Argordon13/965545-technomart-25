@@ -357,7 +357,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: self-end;
+    align-items: flex-end;
     margin-top: 40px;
     
 }
@@ -442,12 +442,24 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 35px;
+    padding-bottom: 35px;
 }
 /*Весь белый текст в подвале*/
 .footer-text{
     color: #ffffff;
+}
+.copyright {
+    width: 35%;
+}
+
+.feedback-and-developer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback-and-developer p:first-child {
+    padding-right: 45px;
 }
 /*Список ссылок на социальные сети*/
 .footer-social ul{
@@ -572,10 +584,8 @@ a {
     display: flex;
     justify-content: space-around;
 }
-/*Позиционирование элементов списка*/
-.inner-page .personal-area li {
-    
-}
+
+
 /*Цвет ссылки элемента*/
 .inner-page .personal-area a{
     text-decoration: underline;
@@ -598,15 +608,60 @@ a {
     font-size: 13px;
     margin: 0;
     padding: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+
 }
 /*Позиционирование "хлебных крошек"*/
 .breadcrumbs li {
-    display: inline;
+    background: url(../img/icon-breadcrumbs.png) no-repeat left center;
+    padding-left: 20px;
+    padding-right: 15px;
+    justify-content: space-between;
+}
+
+.breadcrumbs li:first-child{
+    background: none;
+    padding-left: 0;
 }
 /*Цвет ссылок*/
 .breadcrumbs a {
     color: #000000;
 }
+
+.title-perforators {
+    padding: 30px 0 30px 30px;
+}
+
+.filter-and-catalog {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter fieldset {
+    border: none;
+    text-transform: uppercase;
+    flex-basis: 220px;
+    margin: 0;
+    padding: 0;
+}
+  
+  .filter legend {
+    font-size: 17px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
+}
+  
+  .filter ul {
+    list-style: none;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  
 
 /*Стили заголовка*/
 .inner-page .title {
@@ -614,6 +669,7 @@ a {
     color: #32425c;
     background-color: #f1f5f7;
 }
+
 /*Кнопка "Показать" в фильтре*/
 .filter-button {
     background-color: #ffffff;
@@ -624,21 +680,99 @@ a {
 
 .catalog ul {
     list-style: none;
-    margin: 0;
+    margin: 20px auto;
     padding: 0;
-    
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
-/*Размер шрифта цены*/
+
+.catalog .catalog-list li {
+    position: relative;
+    width: 218px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    
+    font-weight: bold;
+    text-align: center;
+    
+    border: 1px solid #ccc;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.item-title a{
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    color: #000000;
+}
+
+.catalog .catalog-button-list {
+    display: none;
+}
+.catalog li:hover .catalog-button-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 218px;
+    height: 88px;
+    padding: 40px 0;
+    
+    background-color: rgba(255,255,255,0.9);
+    z-index: 10;
+
+
+}
+
 .catalog .price-button {
     font-size: 18px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
+
+    position: relative;
+    width: 80px;
+    margin: 10px auto;
+    margin-bottom: 20px;
+    padding: 9.5px 30px;
+    
+    color: white;
+    background: #ee3643;
+    border-radius: 3px;
+}
+.catalog .price-button:after {
+    content: "";
+  
+    position: absolute;
+    top: 0;
+    right: -20px;
+    
+    width: 0;
+    height: 0;
+    
+    border: 20px solid white;
+    border-left-color: #ee3643;
 }
 
 .catalog-button-list a.button-cart {
+    width: 135px;
     background-color: #63a53d;
     color: #ffffff;
     text-transform: uppercase;
     box-shadow: inset 0 -3px 0 0 #367314; 
     font-size: 14px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-radius:3px;
+    margin-bottom: 7px;
 }
 .catalog-button-list a.button-cart:hover {
     background-color: #5fbb2d;
@@ -654,16 +788,19 @@ a {
 }
 
 .catalog-button-list a.button-bookmark {
+    width: 132px;
     background-color: #ffffff;
     color: #32425c;
     text-transform: uppercase;
     border: 3px solid #63a53d;
     font-size: 14px; 
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-radius:3px;
 }
 .catalog-button-list a.button-bookmark:hover {
     border: 3px solid #31415b; 
 }
-
 .catalog-button-list a.button-bookmark:active {
     opacity: 0.3;
 }
@@ -671,4 +808,6 @@ a {
 .inner-page .text-price {
     color: #999999;
     font-size: 17px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
 }
