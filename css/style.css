@@ -135,7 +135,7 @@ a {
     font-weight: normal;
     line-height: 23px;
     color: #ee3643;
-    max-width: 190px;
+    max-width: 195px;
     max-height: 67px;
     margin: 0;
     padding-left: 50px;
@@ -527,11 +527,37 @@ a {
 }
 .popup-map {
     display: none;
+    position: fixed;
+    width: 940;
+    height: 446px;
+    top: 120px;
+    left: 25%;
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
 .add-cart {
     display: none;
 }
 
+.button-close {
+    width: 22px;
+    height: 22px;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    margin-top: 9px;
+    margin-right: 9px;
+
+    font-size: 0;
+
+    background-color: transparent;
+    border: 0;
+    background-image: url(../img/close.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
 
 /*Страница каталога*/
 /*Поведение элемента, когда что-то есть в корзине*/
@@ -554,6 +580,9 @@ a {
 
 .user svg {
     fill: #c5c5c5;
+}
+.icon-user {
+    margin-right: 13px;
 }
 /*Заглушка для того, чтобы сработало поведение иконок*/
 .inner-page .user:hover{
@@ -634,32 +663,55 @@ a {
     padding: 30px 0 30px 30px;
 }
 
+.filter {
+    margin-right: 20px;
+}
+
 .filter-and-catalog {
     display: flex;
     justify-content: space-between;
 }
 
 .filter fieldset {
-    border: none;
     text-transform: uppercase;
-    flex-basis: 220px;
+    width: 220px;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.filter-div {
+    border-top-color: #e5e5e5;
+    border-top-style: solid;
+    border-top-width: 1px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.filter legend {
+    font-size: 17px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
     margin: 0;
     padding: 0;
 }
   
-  .filter legend {
-    font-size: 17px;
-    font-family: "PT Sans", sans-serif;
-    font-weight: bold;
-}
-  
-  .filter ul {
+.filter-list {
     list-style: none;
     font-size: 15px;
     margin: 0;
     padding: 0;
-  }
+    
+}
 
+.filter-option {
+    margin-top: 17px;
+}
+
+.filter-button {
+    margin-top: 75px;
+    padding: 14px 38px;
+}
 
   
 
@@ -678,6 +730,10 @@ a {
     font-size: 13px;
 }
 
+.catalog {
+    width: 700px;
+}
+
 .catalog ul {
     list-style: none;
     margin: 20px auto;
@@ -688,7 +744,7 @@ a {
     -webkit-flex-wrap: wrap;
 }
 
-.catalog .catalog-list li {
+.catalog-list li {
     position: relative;
     width: 218px;
     margin-right: 20px;
@@ -703,6 +759,10 @@ a {
     flex-direction: column;
     align-content: center;
     justify-content: space-between;
+}
+
+.catalog-list li:nth-child(3n) {
+    margin-right: 0;
 }
 
 .item-title a{
