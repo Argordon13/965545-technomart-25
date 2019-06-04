@@ -761,8 +761,33 @@ a {
     justify-content: space-between;
 }
 
+.catalog-list li:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+}
+
+.catalog-list li:focus {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+}
+
 .catalog-list li:nth-child(3n) {
     margin-right: 0;
+}
+
+.catalog-item .flag {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    
+    width: 60px;
+    height: 60px;
+    
+    text-indent: -1000px;
+    overflow: hidden;
+    z-index: 20;
+}
+  
+.catalog-item .flag-new {
+    background: url("../img/new-flag.png") no-repeat 0 0;
 }
 
 .item-title a{
@@ -871,4 +896,8 @@ a {
     font-size: 17px;
     font-family: "PT Sans", sans-serif;
     font-weight: bold;
+}
+
+.inner-page .text-price-empty {
+    height: 20px;
 }
