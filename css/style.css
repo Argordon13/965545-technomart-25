@@ -67,6 +67,9 @@ a {
 .icon {
     fill: #6a7180;
 }
+.bookmark, .cart {
+    margin-right: 13px;
+}
 
 /*Меню пользователя*/
 .user-menu-list {
@@ -95,8 +98,7 @@ a {
 .user-menu-item:hover:not(.order) {
     background-color: #212a3a;
 }
-/*Изменение цвета иконки при наведении на элемент списка*/
-.user-menu 
+/*Изменение цвета иконки при наведении на элемент списка*/ 
 .user-menu-item:hover svg {
     fill: #ffffff;
 }
@@ -134,6 +136,7 @@ a {
     line-height: 23px;
     color: #ee3643;
     max-width: 190px;
+    max-height: 67px;
     margin: 0;
     padding-left: 50px;
 }
@@ -201,32 +204,29 @@ a {
 .user-navigation-item:last-child {
     margin-right: 0;
 }
-/*Цвет ссылок*/
-.user-navigation 
+/*Цвет ссылок*/ 
 .user-navigation-item a {
     color: #000000; 
 }
-/*Цвет ссылок при наведении*/
-.user-navigation 
+/*Цвет ссылок при наведении*/ 
 .user-navigation-item a:hover {
     color: #ee3643; 
 }
 /*Цвет ссылок при клике*/
-.user-navigation 
 .user-navigation-item a:active {
     color: #b2b2b2; 
 }
 /*Цвет значка при наведении*/
-.user-navigation 
-.user-navigation-item:hover svg .fill-login {
+.user-navigation-item:hover .fill-login {
     fill: #32425c; 
 }
 /*Цвет значка при клике*/
-.user-navigation 
-.user-navigation-item:active svg .fill-login {
+.user-navigation-item:active .fill-login {
     fill: #c5c5c5; 
 }
-
+.icon-login {
+    margin-right: 14px;
+}
 
 /*Навигация шапки*/
 
@@ -294,7 +294,7 @@ a {
     margin-bottom: 86px;
 }
 
-.about-company .container .company {
+.about-company .company {
     padding-right: 120px;
     flex-basis: 680px;
 }
@@ -302,7 +302,7 @@ a {
     width: 220px;
     
 }
-.about-company .container .contacts {
+.about-company .contacts {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -685,6 +685,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    -webkit-flex-wrap: wrap;
 }
 
 .catalog .catalog-list li {
