@@ -72,7 +72,7 @@
       <!--Секция середины шапки-->
       <section class="middle-container">
         <div class="container">
-          <h1 class="main-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+          <h1 class="main-title">Интернет-магазин строительных материалов <br> и инструментов для ремонта</h1>
           <!--Адрес и телефон-->
           <div class="address-and-phone">
             <div class="phone">
@@ -495,21 +495,25 @@
     <!--Форма обратной связи-->
     <section class="popup-feedback">
       <h2 class="invisible">Обратная связь</h2> <!--Будет невидим-->
+      <button class="btn-close button-close " type="button">Закрыть</button>
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
-        <div class="form-element">
-          <label class="label-form" for="username">Ваше имя:</label>
-          <input id="username" class="user-name" name="name" type="text" placeholder="Имя Фамилия">
-        </div>
-        <div class="form-element">
-          <label class="label-form" for="user-email">Ваш e-mail:</label>
-          <input id="user-email" class="email" name="e-mail" type="text" placeholder="email@example.com">
+        <div class="form-input">
+          <div class="form-element">
+            <label class="label-form" for="username">Ваше имя:</label>
+            <input id="username" class="user-name actions" name="name" type="text" placeholder="Имя Фамилия">
+          </div>
+          <div class="form-element ">
+            <label class="label-form" for="user-email">Ваш e-mail:</label>
+            <input id="user-email" class="email actions" name="e-mail" type="text" placeholder="email@example.com">
+          </div>
         </div>
         <div class="form-element">
           <label class="label-form" for="user-message">Текст письма:</label>
-          <textarea class="message" placeholder="В свободной форме" id="user-message" name="message"></textarea>
+          <textarea   class="message actions"  placeholder="В свободной форме" id="user-message" name="message"></textarea>
         </div>
-        <button class="feedback-button-submit">Отправить</button>
-        <button class="button-close" type="button">Закрыть</button>
+        <div class="feedback-footer">
+          <button class="feedback-button-submit button">Отправить</button>
+        </div>
       </form>
     </section>
 
