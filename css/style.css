@@ -64,8 +64,13 @@ a {
 }
 
 .svg-and-search {
-    margin-left: 40px;
-    display: inline-block;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    margin-right: 15px;
 }
 
 /*Цвет иконок в шапке*/
