@@ -63,6 +63,11 @@ a {
     background-color: #ba2732;
 }
 
+.svg-and-search {
+    margin-left: 40px;
+    display: inline-block;
+}
+
 /*Цвет иконок в шапке*/
 .icon {
     fill: #6a7180;
@@ -843,7 +848,7 @@ a {
 
 .filter legend {
     font-size: 17px;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", 'Arial', sans-serif;
     font-weight: bold;
     margin: 0;
     padding: 0;
@@ -1030,13 +1035,14 @@ input[type="radio"]:disabled + label {
 }
 
 .item-title a{
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", 'Arial', sans-serif;
     font-size: 18px;
     color: #000000;
 }
 
 .catalog .catalog-button-list {
     display: none;
+    background-color: #ffffff;
 }
 .catalog li:hover .catalog-button-list{
     display: flex;
@@ -1060,7 +1066,7 @@ input[type="radio"]:disabled + label {
 
 .catalog .price-button {
     font-size: 18px;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", 'Arial', sans-serif;
     font-weight: bold;
 
     position: relative;
@@ -1133,7 +1139,7 @@ input[type="radio"]:disabled + label {
 .inner-page .text-price {
     color: #999999;
     font-size: 17px;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", 'Arial', sans-serif;
     font-weight: bold;
 }
 
