@@ -17,7 +17,6 @@ body, html {
 .address p,
 .list-power input,
 .list-fabricators input,
-.service p,
 .company p,
 .footer-information p
  {
@@ -278,9 +277,9 @@ svg.search-icon {
 }
 
 .main-title {
-    width: 247px;
+    width: 200px;
     float: left;
-    margin: 49px 0 40px 52px;
+    margin: 49px 47px 40px 52px;
     font-size: 16px;
     line-height: 23px;
     font-weight: 400;
@@ -1011,9 +1010,19 @@ svg.search-icon {
 }
 
 .service > p {
-    padding-bottom: 64px;
     font-size: 13px;
-    font-family: "PT Sans", "Arial", sans-serif
+    font-family: "PT Sans", "Arial", sans-serif;
+}
+
+.text-service {
+    margin: 0;
+    padding: 0;
+}
+
+.text-service-2 {
+    padding-bottom: 69px;
+    padding-top: 0;
+    margin: 0;
 }
 
 .service-section {
@@ -1106,6 +1115,10 @@ svg.search-icon {
 
 p.additional-text {
     width: 200px;
+}
+
+.service-section-right p {
+    margin: 0;
 }
 
 .credit .btn {
@@ -1266,6 +1279,9 @@ p.additional-text {
     font-family: "PT Sans", "Arial", sans-serif;
     margin-bottom: 32px;
 }
+.contacts  .contact-text {
+    margin-bottom: 0;
+}
 
 .map {
     display: block;
@@ -1342,6 +1358,10 @@ p.additional-text {
     font-weight: 400;
     font-style: normal;
     font-family: "Cuprum", "Arial", sans-serif;
+}
+
+.address-2 p {
+    margin: 0;
 }
 
 .address-2 p {
@@ -1517,6 +1537,7 @@ p.additional-text {
 
 .links a:active {
     color: #ee3643;
+    text-decoration: none;
 }
 
 .btn:hover {
@@ -2542,17 +2563,17 @@ p.additional-text {
 }
 
 .following:hover {
-    border: 1px solid #bdc6ca
+    border: 1px solid #bdc6ca;
 }
 
 .following:active {
-    border: 1px solid #ee3643
+    border: 1px solid #ee3643;
 }
 
 .about {
     padding: 68px 0 69px;
     color: #000;
-    background: #f2f6f8
+    background: #f2f6f8;
 }
 
 .about-content>h2, .about-content>p {
@@ -2560,17 +2581,18 @@ p.additional-text {
     font-style: normal;
     line-height: 24px;
     color: #000;
-    background: #f2f6f8
+    background: #f2f6f8;
 }
 
 .about-content>h2 {
     margin-bottom: 28px;
     text-transform: uppercase;
     font-size: 30px;
-    font-family: "Cuprum", "Arial", sans-serif
+    font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .about-content>p {
     font-size: 13px;
-    font-family: "PT Sans", "Arial", sans-serif
+    font-family: "PT Sans", "Arial", sans-serif;
+    margin: 0;
 }
